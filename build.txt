@@ -1,0 +1,5 @@
+CUSTOMIZE:
+    npx tailwindcss-cli build ./style.css -o ./tailwind.css
+
+BUILD PROD:
+    NODE_ENV=production npx tailwindcss-cli build style.css -o ./tailwind.css

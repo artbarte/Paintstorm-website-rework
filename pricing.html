@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.paintstormstudio.com/favicon.ico" type="image/x-icon">
+    <title>Paintstorm Studio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Sora:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+
+<body>
+    <header class=" bg-title bg-center bg-cover">
+        <!-- Header with navbar -->
+        <nav
+            class="w-full inline-flex items-center mb-2 pt-2 pb-2 pl-4 pr-8 border-b-2 border-white border-opacity-10 text-white font-medium bg-dark bg-opacity-40 flex-wrap">
+            <a href="index.html">
+                <img class="lg:h-10 w-auto mr-4 h-6 lg:text-base" src="img/logo.svg" alt="paintstorm studio logo">
+            </a>
+            <a class="nav-button" href="">Features</a>
+            <a class="nav-button" href="">Try</a>
+            <a class="nav-button" href="">iPad</a>
+            <a class="nav-button" href="">Help</a>
+            <a class="nav-button" href="">Resources</a>
+            <a class="nav-button" href="">Contact</a>
+            <a class="nav-button" href="">Forum</a>
+            <a class="nav-button ml-auto order-last text-psorange" href="">Login</a>
+            <a class=" text-xs lg:text-base order-last px-4 py-1 bg-gradient-to-b from-psorangelight to-psorangedark rounded-lg "
+                href="pricing.html">Buy</a>
+        </nav>
+        <div class="flex flex-col items-center p-4">
+            <h1 class="mt-4 font-sora text-white text-3xl lg:text-5xl font-semibold text-center">Pricing options</h1>
+            <!-- Pricing blocks -->
+            <div class="w-full flex flex-col lg:flex-row items-center justify-evenly p-4 px-10">
+                <!-- Pricing option one -->
+                <div class="flex flex-col justify-center items-center bg-black bg-opacity-50 p-5 w-72 h-72 rounded-xl">
+                    <h1 class="font-bold text-3xl text-center text-white">Lifetime license</h1>
+                    <span class="text-psorange text-6xl font-bold"><span
+                            class="font-light italic text-xl align-top">$</span>19</span>
+                    <p class="font-light text-sm text-white text-center mt-2">Purchase license for one-time fee and you
+                        get lifetime updates.</p>
+                    <button
+                        class="bg-gradient-to-b from-psorangelight to-psorangedark rounded-lg px-6 py-1 text-white mt-4 mb-2 font-bold">Buy
+                        now</button>
+                    <div class="flex">
+                        <img src="img/win.svg" alt="">
+                        <img src="img/apple.svg" alt="">
+                        <img src="img/linux.svg" alt="">
+                    </div>
+                </div>
+                <p class="text-white font-bold text-5xl p-4">Or</p>
+                <!-- Pricing option two -->
+                <div class="flex flex-col justify-center items-center bg-black bg-opacity-50 p-5 w-72 h-72 rounded-xl">
+                    <h1 class="font-bold text-2xl text-center text-white">Get 2 licenses with discount</h1>
+                    <span class="text-psorange text-6xl font-bold"><span
+                            class="font-light italic text-xl align-top">$</span>29</span>
+                    <p class="font-light text-sm text-white text-center mt-2">If you want to use Paintstorm Studio on
+                        multiple PC buy two coupies with discount</p>
+                    <button
+                        class="bg-gradient-to-b from-psorangelight to-psorangedark rounded-lg px-6 py-1 text-white mt-4 mb-2 font-bold">Buy
+                        now</button>
+                    <div class="flex">
+                        <img src="img/win.svg" alt="">
+                        <img src="img/apple.svg" alt="">
+                        <img src="img/linux.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <p class="text-white text-opacity-50 text-sm">If you need volume licensing or license for commercial or
+                academic purpose, please feel free to contact us: info@paintstormstudio.com</p>
+        </div>
+    </header>
+    <main class="bg-dark relative flex flex-col items-center pt-4">
+        <!-- Get free -->
+        <div>
+            <h1 class="font-sora text-psorange text-4xl font-bold text-center mt-4">You can also try Paintstorm Studio
+                for
+                free</h1>
+            <h3 class="font-sora text-white text-center">Get a fully functional version of Paintstorm Studio now.
+                Then, explore all the ways Paintstorm can simplify digital painting -
+                free for 30 launches.
+            </h3>
+            <form action="" class="flex flex-col items-center p-4">
+                <input type="email" name="" id="" placeholder="Email"
+                    class="bg-dark text-white border border-psorange rounded p-2 mb-2">
+                <input type="submit" value="Get download link"
+                    class="py-2 px-4 cursor-pointer text-black bg-psorange font-semibold rounded-md mb-2">
+                <p class="text-white text-xs text-opacity-50">*I agree that Paintstorm may keep me informed via email
+                    about products and services.</p>
+            </form>
+        </div>
+        <!-- System requirments -->
+        <div class="bg-psorange w-full flex flex-col items-center p-4">
+            <h1 class="text-3xl font-sora font-bold text-center text-white mb-4">System requirments</h1>
+            <h3 class="font-sora text-center">We recommend to use a modern PC with the gaming graphic card and the Wacom
+                tablet for comfortable work.</h3>
+            <table class="border-2 bg-psorange m-2">
+                <tbody>
+                    <tr>
+                        <td class="font-bold pr-4 text-right">CPU:</td>
+                        <td>Core i3-4150 3.5Ghz</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold pr-4 text-right">OS:</td>
+                        <td>Windows Vista/7/8/10 MAC OS 10.7 and higher</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold pr-4 text-right">MEMORY:</td>
+                        <td>2GB (better 4GB or higher)</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold pr-4 text-right">HDD SPACE:</td>
+                        <td>100 Mb</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold pr-4 text-right">GRAPHIC CARD:</td>
+                        <td>nVidia GeForce 8800 / Radeon x1900 or higher</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="text-white font-sora">ATTENTION! Paintstorm Studio core uses the GPU-acceleration and can be slow
+                on integrated graphic cards</p>
+        </div>
+    </main>
+    <footer class="text-center text-psorange bg-dark py-2 text-sm">
+        Copyright © Paintstorm Studio Developers Team. All rights reserved.
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.paintstormstudio.com/favicon.ico" type="image/x-icon">
+    <title>Paintstorm Studio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Sora:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="tailwind.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.3/glider.css"
+        integrity="sha512-rEnjEH5u8xKS8NLcXC4nuZwT89x+tMB19ddbolNGE7DTl6o3JEo11kHAwryLlALFnxdONjO4xVpjunLWdiZR1A=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.3/glider.js"
+        integrity="sha512-LB4vTYKgqUWA6w8MZm3zRsXW6bm5LAn6wUOsRFxSua4CHm3xxp6n3v9Ukupagi0AdpXK0FvpEdboPiVSYU3tJw=="
+        crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('load', function () {
+            new Glider(document.querySelector(".caro"), {
+                slidesToShow: 1,
+                draggable: true,
+                dots: '.dots',
+                arrows: {
+                    prev: '.prev',
+                    next: '.next'
+                }
+            });
+        });
+        window.addEventListener('load', function () {
+            new Glider(document.querySelector(".caro-show"), {
+                slidesToShow: 1,
+                draggable: true,
+                dots: '.dots-show',
+                arrows: {
+                    prev: '.prev-show',
+                    next: '.next-show'
+                }
+            })
+        });
+    </script>
+    <style>
+        .glider-dot:hover,
+        .glider-dot:focus,
+        .glider-dot.active {
+            background: #FE581E;
+        }
+    </style>
+</head>
+
+<body>
+    <header class=" bg-title bg-center bg-cover">
+        <!-- Header with navbar -->
+        <nav
+            class="w-full inline-flex items-center mb-2 pt-2 pb-2 pl-4 pr-8 border-b-2 border-white border-opacity-10 text-white font-medium bg-dark bg-opacity-40 flex-wrap">
+            <a href="index.html">
+                <img class="lg:h-10 w-auto mr-4 h-6 lg:text-base" src="img/logo.svg" alt="paintstorm studio logo">
+            </a>
+            <a class="nav-button" href="">Features</a>
+            <a class="nav-button" href="">Try</a>
+            <a class="nav-button" href="">iPad</a>
+            <a class="nav-button" href="">Help</a>
+            <a class="nav-button" href="">Resources</a>
+            <a class="nav-button" href="">Contact</a>
+            <a class="nav-button" href="">Forum</a>
+            <a class="nav-button ml-auto order-last text-psorange" href="">Login</a>
+            <a class=" text-xs lg:text-base order-last px-4 py-1 bg-gradient-to-b from-psorangelight to-psorangedark rounded-lg "
+                href="pricing.html">Buy</a>
+        </nav>
+        <!-- Logo title and button -->
+        <div class="fadeInUp flex flex-col items-center p-4">
+            <img class="w-auto h-28 lg:h-40" src="img/logo.svg" alt="paintstorm studio logo">
+            <h1 class="mt-4 font-sora text-white text-3xl lg:text-5xl font-semibold text-center">Paintstorm Studio</h1>
+            <h2 class="font-sora text-white text-gray-400 text-opacity-50">Professional software for digital paiting
+            </h2>
+            <button
+                class="bg-gradient-to-b from-psorangelight to-psorangedark rounded-lg px-6 py-1 text-white mt-4 font-bold">Download</button>
+            <p class="text-psorange text-xs mt-1">Win • Mac • Linux • iPad </p>
+        </div>
+    </header>
+    <main class=" bg-dark relative">
+        <!-- Carousel buttons -->
+        <button aria-label="Previous" class="prev absolute top-40 z-10 transform rotate-180"><img src="img/arrow.svg"
+                alt=""></button>
+        <button aria-label="Next" class="next absolute top-40 right-0 z-10"><img src="img/arrow.svg" alt=""></button>
+        <!-- Feature carousel -->
+        <div class="caro pt-8 overflow-hidden">
+            <!-- Element -->
+            <div class=" carousel-item">
+                <video class="carousel-item-img" autoplay loop muted>
+                    <source src="img/brushsettings.webm" type="video/webm">
+                    <source src="img/brushsettings.mp4" type="video/mp4">
+                </video>
+                <div class="carousel-item-desc">
+                    <h2 class="carousel-item-desc-category">BRUSH ENGINE</h2>
+                    <h1 class="carousel-item-desc-header">Incredible possbilites for brush settings</h1>
+                    <p class="carousel-item-desc-detail">Full control of all brush option</p>
+                </div>
+            </div>
+            <!-- Element -->
+            <div class=" carousel-item">
+                <!-- @todo: BETTER VIDEO -->
+                <video class="carousel-item-img" autoplay loop muted>
+                    <source src="img/bristle.webm" type="video/webm">
+                    <source src="img/bristle.mp4" type="video/mp4">
+                </video>
+                <div class="carousel-item-desc">
+                    <h2 class="carousel-item-desc-category">BRUSH ENGINE</h2>
+                    <h1 class="carousel-item-desc-header">Bristle brushes of any form and kind</h1>
+                    <p class="carousel-item-desc-detail">Use premade or made your own bristle brushes to power up your art</p>
+                </div>
+            </div>
+            <!-- Element -->
+            <div class=" carousel-item">
+                <video class="carousel-item-img" autoplay loop muted>
+                    <source src="img/custompanel.webm" type="video/webm">
+                    <source src="img/custompanel.mp4" type="video/mp4">
+                </video>
+                <div class="carousel-item-desc">
+                    <h2 class="carousel-item-desc-category">FULL INTERFACE CUSTOMIZATION</h2>
+                    <h1 class="carousel-item-desc-header">Customize interface for your needs</h1>
+                    <p class="carousel-item-desc-detail">You can also fill custom window with favorite controllers, instruments, buttons and brushes to create your own unique interface for your work</p>
+                </div>
+            </div>
+            <!-- Element -->
+            <div class="  carousel-item">
+                <video class="carousel-item-img" autoplay loop muted>
+                    <source src="img/interfacelayout.webm" type="video/webm">
+                    <source src="img/interfacelayout.mp4" type="video/mp4">
+                </video>
+                <div class="carousel-item-desc">
+                    <h2 class="carousel-item-desc-category">FULL INTERFACE CUSTOMIZATION</h2>
+                    <h1 class="carousel-item-desc-header">Powerful interface implementation</h1>
+                    <p class="carousel-item-desc-detail">You can save all your created interface layouts and colors to quickly change according to your needs</p>
+                </div>
+            </div>
+        </div>
+        <div role="tablist" class="dots"></div>
+        <!-- General description -->
+        <div class=" border border-psorange bg-desc bg-center bg-cover mt-4  p-8 text-white font-sora text-center">
+            <p class="p-1">
+                <span class="text-psorange font-sora">Paintstorm Studio</span> is created for professional digital
+                painting. And a major role in this program play
+                the brushes. We did our best so that you can easily and quickly adjust the brushes suitable for your
+                painting style.
+            </p>
+            <p class="p-1">
+                Anyone who has ever painted knows it's hard to overestimate the painting tool and the importance of all
+                the seemingly insignificant details. We tried not to miss any of them.
+            </p>
+            <p class="p-1">
+                Our goal was to create an intuitive, simple-to-use but at the same time functionally powerful tool that
+                brings the process of digital painting to a new level, making it as comfortable as possible.
+            </p>
+        </div>
+        <!-- Mini features -->
+        <div class="flex p-10 justify-around flex-wrap">
+            <!-- Mini feature element -->
+            <div class=" lg:w-40 w-32">
+                <img src="img/ps.svg" alt="psd file icon">
+                <h1 class="font-sora text-psorange font-semibold py-1">PSD Support</h1>
+                <p class="text-white border-t border-psorange py-1">Open your old projects for easing your moving to
+                    Paintstorm Studio</p>
+            </div>
+            <!-- Mini feature element -->
+            <div class=" lg:w-40 w-32">
+                <img src="img/keyboard.svg" alt="">
+                <h1 class="font-sora text-psorange font-semibold py-1">Invidual hotkeys for any brushes</h1>
+                <p class="text-white border-t border-psorange py-1">You can also make different combinations of hotkey (like even "a+s+d" etc).
+                </p>
+            </div>
+            <!-- Mini feature element -->
+            <div class=" lg:w-40 w-32">
+                <img src="img/zoom.svg" alt="">
+                <h1 class="font-sora text-psorange font-semibold py-1">Smooth zoom and brush resize</h1>
+                <p class="text-white border-t border-psorange py-1">Brush smoothing and scrubby zoom fully working.
+                </p>
+            </div>
+            <!-- Mini feature element -->
+            <div class=" lg:w-40 w-32">
+                <img src="img/dice.svg" alt="">
+                <h1 class="font-sora text-psorange font-semibold py-1">Control of random amounts</h1>
+                <p class="text-white border-t border-psorange py-1">For example, if you are drawing forest, and you want to add a few high trees and lots of short trees, you can adjust random amounts.
+                </p>
+            </div>
+        </div>
+        <!-- Showcase -->
+        <div class="bg-pattern2 p-10 pb-5 relative">
+            <h1 class="font-sora font-bold text-white text-4xl lg:text-6xl text-center">Showcase</h1>
+            <h2 class="font-sora text-psorange text-base lg:text-xl text-center mb-8">Great art is made with Paintstorm
+                Studio</h2>
+            <button aria-label="Previous" class="prev-show absolute top-1/2 left-0 z-10 transform rotate-180"><img
+                    src="img/arrow.svg" alt=""></button>
+            <button aria-label="Next" class="next-show absolute top-1/2 right-0 z-10"><img src="img/arrow.svg"
+                    alt=""></button>
+
+            <!-- @TODO Showcase carousel -->
+            <div class="caro-show overflow-hidden">
+                <!-- Showcase element -->
+                <div class="flex flex-col items-center">
+                    <a href="" target="_blank">
+                        <img class="" src="https://cdnb.artstation.com/p/assets/images/images/005/199/539/large/eugene-kovryga-birch-trees-by-newmand.jpg" alt="">
+                    </a>
+                    <p class="my-2 text-center text-white text-opacity-50">Artist: <span class="underline">Eugene Kovryga</span></p>
+                </div>
+                <!-- Showcase element -->
+                <div class="flex flex-col items-center">
+                    <a href="" target="_blank">
+                        <img class="" src="https://cdna.artstation.com/p/assets/images/images/019/950/894/large/massimiliano-haematinon-nigro-desirable-future-massimiliano-haematinon-nigrof.jpg" alt="">
+                    </a>
+                    <p class="my-2 text-center text-white text-opacity-50">Artist: <span class="underline">Massimiliano Haematinon Nigro</span></p>
+                </div>
+                <!-- Showcase element -->
+                <div class="flex flex-col items-center">
+                    <a href="" target="_blank">
+                        <img class="" src="https://cdnb.artstation.com/p/assets/images/images/007/787/541/large/ferdinand-ladera-zuran2k.jpg" alt="">
+                    </a>
+                    <p class="my-2 text-center text-white text-opacity-50">Artist: <span class="underline">Ferdinand LaderaPro</span></p>
+                </div>
+            </div>
+            <div role="tablist" class="dots-show"></div>
+        </div>
+        <div class="p-14 font-sora font-semibold text-3xl text-center bg-footer">
+            <p class="text-white">Try the software yourself</p>
+            <p><a class="underline text-psorange z-10" href="pricing.html">Download trial or purchase it now</a></p>
+        </div>
+    </main>
+    <footer class="text-center text-psorange bg-dark py-2 text-sm">
+        <p>Copyright © Paintstorm Studio Developers Team. All rights reserved.</p>
+        <div class="flex items-center justify-center mt-2">
+            <a href="" target="_blank"><img class="h-8 pl-2 w-auto" src="img/discord.svg" alt=""></a>
+            <a href="" target="_blank"><img class="h-8 pl-2 w-auto" src="img/youtube.svg" alt=""></a>
+            <a href="" target="_blank"><img class="h-8 pl-2 w-auto" src="img/facebook.svg" alt=""></a>
+            <a href="" target="_blank"><img class="h-8 pl-2 w-auto" src="img/deviant.svg" alt=""></a>
+        </div>
+    </footer>
+</body>
+
+</html>
