@@ -4,7 +4,7 @@ Mostly did it for fun after I saw how bad their website is (was).
 Its not perfect and I would change a lot if it would be a real commercial project but it was meant to be a prototype and project for fun.
 The descriptions are mostly copy pasted from the original website and used as a placeholder. The animated previews were made by me
 
-Live preview: 
+Prototype preview: https://artbarte.github.io/Paintstorm-website-rework/
 
 To design the website used Figma. Prototype was made with tailwindcss and glider.js for img carousel.
 Normally I would use webpack and more organized workflow but for the size of this project I only used cli and simple html.
